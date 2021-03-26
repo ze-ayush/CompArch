@@ -33,4 +33,6 @@ module tb_dsync;
 
         #8 $finish;
     end
+initial
+		$monitor($time," CLK = %b, RESET = %b, Out = %b , Out'= %b", clk, rst, out, out1 );
 endmodule
